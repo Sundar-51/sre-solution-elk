@@ -1,0 +1,4 @@
+#INTERNET GATEWAY
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc[0].id
+}
